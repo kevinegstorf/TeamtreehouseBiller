@@ -1,4 +1,7 @@
 class TimeEntry < AccountEntry
-	belongs_to :customer
-	belongs_to :employee
+  belongs_to :employee
+
+  def cost
+    time * 34
+  end
 end
